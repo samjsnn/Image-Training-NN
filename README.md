@@ -3,7 +3,7 @@ This project is aimed at training a neural network on images using Fourier-based
 
 SkipConn: Skip connections help mitigate the vanishing gradient problem and facilitate training of deeper networks.
 
-Fourier: The architecture employs Fourier features before feeding the data into the inner model, in this case, the SkipConn model. Fourier features can help the model generalize better to different frequencies in the data.
+Fourier: The architcture employs Fourier features before feeding the data into the inner model, in this case, the SkipConn model. Fourier features can help the model generalize better to different frequencies in the data.
 
 CenteredLinearMap: A utility class to linearly scale and translate the data.
 
@@ -14,7 +14,7 @@ This can be represented as:
 
 Fourier Features: The Fourier model expands the input features using both sine and cosine functions of different orders. This aids the model in capturing more complex patterns and periodicities in the data. 
 
-The Fourier transformation is mathematically represented as:
+The Fourier transformation is mathematically representd as:
 
 ![image](https://github.com/samjsnn/Image-Training-Neural-Network/assets/106383967/ce4ca45a-8ca0-47d7-ad60-8e49a67b402c)
 
