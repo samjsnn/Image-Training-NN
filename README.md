@@ -1,9 +1,9 @@
 
 This project is aimed at training a neural network on images using Fourier-based and Skip-connection-based neural network architectures.
 
-SkipConn: Skip connections help mitigate the vanishing gradient problem and facilitate training of deeper networks.
+SkipConn: Skip connections help mitigate the vanishing gradient problem and facilitate training of deeper networks. This model will directly learn from the pixel values of the image. While the skip connections provide a form of shortcut for the gradients and allow for better information flow, the model will noticaebly struggle to capture periodic patterns or intricate details without extensive training or additional layers.
 
-Fourier: The architcture employs Fourier features before feeding the data into the inner model, in this case, the SkipConn model. Fourier features can help the model generalize better to different frequencies in the data.
+Fourier: By first transforming the image data into Fourier space, this model can leverage the strength of frequency domain representation. The intricate details and periodic patterns of the image, which might be challenging to capture in the original space, can be more easily represented and learned in the Fourier space. Once the Fourier features are computed, they are passed through the SkipConn model, combining the strengths of both Fourier transformation and skip connections.
 
 CenteredLinearMap: A utility class to linearly scale and translate the data.
 
