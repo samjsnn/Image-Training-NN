@@ -34,3 +34,5 @@ Learning Rate Scheduler: The learning rate is decreased by half every 3 epochs u
 Ensure CUDA is available for GPU acceleration. Otherwise, remove the .cuda() calls and train the model on CPU.
 
 Start the training process by specifying your img_path and ensuring the image dimensions are even then run train.py
+
+hellosamjsn@gmail.com
