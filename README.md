@@ -1,5 +1,5 @@
 
-This project is aimed at training a neural network on images using Fourier-based and Skip-connection-based neural network architectures.
+The goal of this project is aimed at training a neural network on images using Fourier-based and Skip-connection-based neural network architectures.
 
 SkipConn: Skip connections help mitigate the vanishing gradient problem and facilitate training of deeper networks. This model will directly learn from the pixel values of the image. While the skip connections provide a form of shortcut for the gradients and allow for better information flow, the model will noticaebly struggle to capture periodic patterns or intricate details without extensive training or additional layers.
 
