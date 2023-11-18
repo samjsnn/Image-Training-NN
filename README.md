@@ -1,11 +1,11 @@
 
 The goal of this project is to train a neural network to recreate an input image. The approach involved using a NN architecture called the Fourier model, which extends a SkipConn base model to capture general and periodic features in the input data. The model is trained over multiple epochs with each epoch iterating through batches of the dataset, updating the model parameters through backpropagation.
 
-Throughout training, images of the model's output are saved at regular intervals, allowing for a visual representation of how the model evolves over time. The resulting images are then compiled into a video using ffmpeg.
+During the training process images of the model's output are saved at regular intervals, producing a visual representation of how the model evolves over time. The resulting images are then compiled into a video using ffmpeg.
 
-SkipConn: Skip connections help mitigate the vanishing gradient problem and facilitate training of deeper networks. This model will directly learn from the pixel values of the image. While the skip connections provide a form of shortcut for the gradients and allow for better information flow, the model will noticaebly struggle to capture periodic patterns or intricate details without extensive training or additional layers.
+SkipConn: Skip connections helped mitigate the vanishing gradient problem. This model will directly learn from the pixel values of the image. The skip connections provide a form of shortcut for the gradients and allow for better information flow however the model would noticaebly struggle to capture periodic patterns or intricate details without extensive training or additional layers.
 
-Fourier: By first transforming the image data into Fourier space, this model can leverage the strength of frequency domain representation. The intricate details and periodic patterns of the image, which might be challenging to capture in the original space, can be more easily represented and learned in the Fourier space. Once the Fourier features are computed, they are passed through the SkipConn model, combining the strengths of both Fourier transformation and skip connections.
+Fourier: By first transforming the image data into Fourier space, this model leverages the strength of frequency domain representation. The intricate details and periodic patterns of the image can be more easily represented and learned in the Fourier space. Once the Fourier features are compute they are passed through the SkipConn model, combining the strengths of both Fourier transformation and skip connections.
 
 CenteredLinearMap: A utility class to linearly scale and translate the data.
 
